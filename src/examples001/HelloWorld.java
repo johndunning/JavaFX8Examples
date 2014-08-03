@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package chapter2;
+package examples001;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;

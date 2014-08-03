@@ -4,16 +4,14 @@
  * and open the template in the editor.
  */
 
-package chapter2;
+package examples001;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Slider;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.StrokeLineCap;
@@ -52,7 +50,7 @@ public class DrawingShapes extends Application
         
         //
                 
-        Slider slider = new Slider(30,150,0);
+        Slider slider = new Slider(30,150,30);
         slider.setLayoutX(250-slider.getWidth()/2);
         slider.setLayoutY(115-slider.getHeight()/2);
         
@@ -72,8 +70,7 @@ public class DrawingShapes extends Application
         
         //
         
-        Slider slider2 = new Slider(10,120,0);
-        slider2.setValue(50);
+        Slider slider2 = new Slider(10,120,50);
         slider2.setLayoutX(50);
         slider2.setLayoutY(230);
         
